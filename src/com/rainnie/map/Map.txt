@@ -1,0 +1,22 @@
+Map:
+    将键映射到值的对象。一个映射不能包含重复的键；每个键最多只能映射到一个值。
+Map和Collection的区别:
+  Map存储的是键值对形式的元素，键唯一，值可以重复。
+  Collection 存储的是单独出现的元素，子接口Set元素唯一，子接口List元素可重复。
+  
+/*
+ * 1:Hashtable和HashMap的区别?
+ * Hashtable:线程安全，效率低。不允许null键和null值
+ * HashMap:线程不安全，效率高。允许null键和null值
+ * 
+ * 2:List,Set,Map等接口是否都继承子Map接口?
+ * List，Set不是继承自Map接口，它们继承自Collection接口
+ * Map接口本身就是一个顶层接口
+ */
+ 
+ Map 接口有三个实现类
+     HashMap：基于 hash 表的 Map 接口实现，非线程安全，高效，支持 null 值和 null键,不保证元素的先后顺序；
+     HashTable：线程安全，低效，不支持 null 值和 null 键；
+     LinkedHashMap：是 HashMap 的一个子类，保存了记录的插入顺序；
+     SortMap 接口：TreeMap，能够把它保存的记录根据键排序，默认是键值的升序排序）。
+  

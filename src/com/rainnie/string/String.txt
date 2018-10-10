@@ -1,0 +1,13 @@
+Java中的String，StringBuilder，StringBuffer三者的区别
+1.运行速度:
+   StringBuilder>StringBuffer>String
+   String是字符串常量，而StringBuilder和StringBuffer都是字符串变量，也就是说String一旦创建，那么是不可改变的，而后两者
+     是变量，所以可以改变。
+
+2.线程安全:
+   StringBuffer是线程安全的，因为它的很多方法带有synchronized关键字，而Stringbuilder线程不安全，但是效率高.
+
+3.总结:
+   String:适用于少量的字符串操作的情况
+   StringBuffer:适用于单线程下在字符缓冲区进行大量操作的情况
+   StringBuilder:适用多线程下在字符缓冲区进行大量操作的情况
